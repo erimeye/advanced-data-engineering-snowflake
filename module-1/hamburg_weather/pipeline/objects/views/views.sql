@@ -15,6 +15,7 @@ JOIN {{env}}_tasty_bytes.raw_pos.country c
     ON c.iso_country = hd.country
     AND c.city = hd.city_name;
 
+
 -- Apply UDFs and confirm successful execution
 CREATE OR REPLACE VIEW {{env}}_tasty_bytes.harmonized.weather_hamburg
 AS
